@@ -1,0 +1,64 @@
+Assign1: Due 11:59PM February 24
+
+Using Test First Development (no code without test first) implement the 
+problem you designed in hw2. Feel free to evolve that design and use your 
+judgment to make changes based on the improved understanding and learning.
+
+Take small steps, please ask for frequent reviews.
+
+First start with a tests list and a canary test.
+
+After completing the programming (and only after that) answer the following 
+questions:
+
+1. What did you learn mainly in this assignment?
+
+TDD is totally bizarre to me at this stage.  
+
+I did get a feel for what it was.  I don't have a feel yet for how to do it correctly.  The notion of making sure one develops tests as you go along seems sensible. But the test-driven aspect is foreign and counter-intuitive to me at this stage.
+
+At first viewing of the videos, I took away that generation of test cases should be "brainstormed" and that order didn't matter.  But in subsequent viewings, I recognized that you were actually following a use scenario to determine what to tackle next. 
+
+I did really get the message that we should strive for small sprints and the maximum number of reviews.  This seems reasonable given that writing the tests and the code to make them pass should take a few minutes.   But it took me *much* longer than a few minutes to implement a small number of tests because I just couldn't wrap my head around it.
+
+Ah, I also learned how to separate the logic from the gui in the case of an application like this.
+
+	I found that this assignment taught the motions of implementing a design through test driven development(TTD). It's very, and I stress the word very here, easy to get ahead of yourself in TTD and start implementing parts of code before you implement your test. I know, because both my partner and I were guilty of this very thing. For example while creating the enum for cell and creating the state EXPOSED your first instinct after that would be to add UNEXPOSED and SEALED to the enum as well, even though you have not created a test for it yet. As Venkat pointed out in the beginning of the semester, we had to unlearn these habits that were so ingrained in us already.
+	Another important thing that was stressed throughout this assignment and through the videos is how much your design changes as you are working on code. As the next question points out, our strategic design was vastly different than the real implementation which is a very interesting point to explore. There is a lot of design decisions made on the fly and while you continue to wrap your head around the situation which leads to better code being implemented than what the design could have suggested.
+
+
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+Our strategic design had 3 logic classes and 3 GUI classes.  The implementation has 1 logic class and 2 GUI classes.   We already knew that the Minesweeper and Grid classes might end up being combined, so it's not surprising that they were.  I was surprised that the GameCell class was eliminated.  
+
+On the GUI side, there is not too much difference.  We had included a "nice to have", but unnecessary Seals Remaining Display (I'd thought the number of seals would be limited).  And we did not implement that.  We also did not implement cells with graphics, but used text instead when it became clear that the intent of the assignment was baseline functionality and no bells or whistles.
+
+
+3. Were there any surprise or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+This was not OO design, in my opinion. Is this functional programming?  Perhaps software can be designed with fewer classes, but should that be the main objective? Is it necessarily good?  Is too few classes as bad as too many classes?  
+
+It seems like the API's could be much clearer to the user if done with more classes and designed more in the object-oriented sense. In fact, I couldn't even tell you at this stage (1 day before completion of the program?) what the API is or whether our program was close to being finished or not. Will the application actually run and behave as expected? 
+
+I found it extremely difficult to know when to mock up the data and when to write real code.  In your video example, you demonstrated a progression of the thought process during TDD - of thinking how to test something, writing code to implement the test, and then taking much of it away, when you thought of a way to "simplify" and eliminate things.  But this seemed like a form of optimization in the sense of writing the code with as few lines as possible.  Perhaps at the expense of understandability.
+ 
+Isn't optimization supposed to come, to some degree, after the design is fleshed out and done only if it is needed?  
+
+Is a user (developer) really supposed to read the tests to determine what the software does?   That is bizarre, except when needing to delve into details. Where is the API view?  
+
+And no comments in the code?? That is anathema to me. 
+
+	Some things I found surprising were both no comments in the code and the amount of classes in our final design. This is mainly because in my last few semesters my professor stressed the idea of comments in code to explain what we are trying to accomplish, even some of my courses I'm taking right now require this. Another thing stressed in my other coding courses is the use of classes. In other courses I feel like the professor wants a class for every abstract idea whereas here we only used 1 for the logic and 3 for the GUI.
+
+
+
+Total [100]: 100
+Code compiles [10]:
+Program produces reasonably desired results when run [10]:
+All tests pass [20]:
+Code Coverage [10]:
+Test quality [10]:
+Design quality [20]:
+Code quality [10]:
+Answers to questions in assign1.txt [10]:

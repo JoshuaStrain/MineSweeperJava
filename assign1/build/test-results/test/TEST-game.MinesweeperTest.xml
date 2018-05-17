@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="game.MinesweeperTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2017-02-25T04:29:03" hostname="DESKTOP-MDA6KLD" time="0.015">
+  <properties/>
+  <testcase name="exposeNeighborsOfInteriorCellCallsExposeCellOnNeighbors" classname="game.MinesweeperTest" time="0.004"/>
+  <testcase name="exposeSealedCellDoesNotExposeCell" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="gameStatusIsInProgressWhenAllMinesSealed10UnminedCellsSealedAndAllOtherCellsExposed" classname="game.MinesweeperTest" time="0.002"/>
+  <testcase name="getNumberOfAjacentMinesWhenCellColumnIsLastColumnInGrid" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeNeighborsOfLowerRightCellCallsExposeCellOnNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="canary" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="getNumberOfAjacentMinesOneMine" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposingAMinedCellDoesNotCallExposeNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="getNumberOfAjacentMinesThreeMines" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="placeMinesArePlacedRandomly" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="gameStatusIsWonWhenAllCellsExposedAndAllMinesSealed" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="callExposeCellWithRowValueOutOfBounds" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeUnexposedEmptyCell" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="exposingAnExposedCellDoesNotCallExposeNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeNeighborsOfUpperRightCellCallsExposeCellOnNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="isAdjacentToMineAtMaxColumn" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="unExposedCellIsSealed" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeAlreadyExposedCell" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeUnexposedCell" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="exposingAnAdjacentCellDoesNotCallExposeNeighbors" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="mineShouldNotBeAdjacent" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="getNumberOfAjacentMinesWhenCellRowIsLastRowInGrid" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="unsealSealedCell" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="sealExposedCell" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="isNumberOfMinesPlacedTen" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="testsToQuitCoverageForEnumGameStatus" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="isAdjacentToMine" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="getNumberOfAjacentMinesWhenRowIsLastRowAndColumnIsLastColumnInGrid" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="callExposeCellWithColumnValueOutOfBounds" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeNeighborsOfUpperLeftCornerCellCallsExposeCellOnNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="exposeNeighborsOfLowerLeftCellCallsExposeCellOnNeighbors" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="isAdjacentOnTopOfMine" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="gameStatusIsInProgressWhenNoCellsExposedAndNoCellsSealed" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="isAdjacentToMineInCorner" classname="game.MinesweeperTest" time="0.001"/>
+  <testcase name="gameStatusIsLostAfterMineIsExposed" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="testsToQuitCoverageForEnumCellState" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="isAdjacentToMineAtMaxRow" classname="game.MinesweeperTest" time="0.0"/>
+  <testcase name="gameStatusIsInProgressWhen90CellsExposedAndNotAllMinesSealed" classname="game.MinesweeperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

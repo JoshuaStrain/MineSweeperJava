@@ -1,0 +1,73 @@
+positive test:  nominal function, valid data/actions
+negative test:  not nominal, invalid data/actions that the code handles w/out throwing exception
+exception test: invalid condition that forces an exception
+
+LISTS of Tests: new baseline
++ player requests new game
+- 
+e
+
++ player wins game by exposing all cells that aren't mined.  "You won"
+-  
+e
+
++ player loses game by exposing a mined cell    "You lost"
+-
+e
+
++ player exposes a cell at some valid x, y location
+- player exposed a cell at an invalid x, y location
+- player exposes an exposed cell                        # Venkat suggestion
+e
+
++ player seals a cell at some valid location
+- player seals an exposed cell
+- player seals a sealed cell
+- player seals an invalid location
+e
+
++ player unseals a cell at some location
+- player unseals an exposed cell
+e
+
++ player exposes an adjacent cell at some location
+- 
+e
+
++ player exposes a bomb at some location
+-
+e
+
++ player exposes an empty cell at some location
+-
+e
+
++ exposure of empty cell by player triggers an exposure of the cells neighbors 
+-
+e
+
+
+---------------------
+
+J - expose a cell
+T - expose an already exposed cell
+J - row out of bounds in call to exposeCell
+T - column out of bound in call to exposeCell
+
+Too down in the weeds for first tests??
+
+- generate random coordinate (x,y) outside of valid range [0,9] for each value
+- test placing a mine.
+- is the mine there?
+- test did anyone win of the start of the game?
+- test when exposed cell count = 90 did we win?
+- does exposing a mine trigger a lose?
+- does exposing empty trigger exposer of neighbors?
+- adjacent calculated correctly?
+- click on exposed cell does nothing happen? ignore or trigger an exceptions?
+- does right clicking seal the cell? (state of the cell changes)
+- does right clicking sealed cell unseal cell? ( state of cell changes?)
+- all are 10 mines on the game board?
+- Make sure we didn't generate the same cooridinates, 10 unique cooridnates.
+- does getNeighbors find all the neighbors next to the newly exposed cell.
+- test if the number of sealed that can be placed is correct.
